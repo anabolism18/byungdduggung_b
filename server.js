@@ -13,9 +13,9 @@ app.use(express.json());
 const scoreRoutes = require('./routes/scores');
 
 // 라우터 설정
-app.use('/api', scoreRoutes);
+app.use('/scores', scoreRoutes);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-}); 
+});
